@@ -5,7 +5,7 @@
  * Adrian Santuario
  * 
  *
- * URL: 
+ * URL: https://santuario.github.io/CEW_pixelArray2/
  */
 
 
@@ -31,7 +31,11 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
+function preload() {
 
+  //Video
+  video = createVideo("assets/videos/fingers.mov");
+}
 
 function setup() {
   createCanvas(displayWidth, displayHeight);
@@ -55,7 +59,6 @@ function draw() {
 
 function initilizeVideo() {
 
-  video = createVideo("assets/videos/fingers.mov");
   video.loop();
   video.hide();
 
